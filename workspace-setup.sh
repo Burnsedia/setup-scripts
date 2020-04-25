@@ -1,6 +1,6 @@
 #!usr/bin/bash
 
-sudo snap instal  blender
+sudo snap install  blender
 sudo snap install krita
 sudo snap install gimp
 sudo snap install obs-studio 
