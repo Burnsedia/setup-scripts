@@ -1,29 +1,41 @@
 #!usr/bin/bash
 
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+bash <(curl -o https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh)>
 
+checkDistro(){
+
+}
+
+debian_install(){
+  sudo apt install blender
+  sudo apt install krita
+  sudo apt install gimp
+  sudo apt install obs-studio
+  sudo apt install git
+  sudo apt install npm 
+  sudo apt install neovim 
+  sudo apt install 
+}
+
+arch_install(){
 # install software for workstation
-sudo snap install  blender
-sudo snap install krita
-sudo snap install gimp
-sudo snap install obs-studio 
-sudo snap install spotify
-sudo snap install gitter-desktop 
-sudo snap install godot
-sudo apt install lmms
-
-
-sudo apt install php7
-sudo apt install mysql
-
+  sudo pacman -S blender
+  sudo pacman -S krita
+  sudo pacman -S gimp
+  sudo pacman -S obs-studio 
 # install dev tools
-sudo apt install git
-sudo apt install npm
-sudo apt install pip && pip3
-sudo apt install cython
-sudo apt install nim
-sudo apt install emacs-25
-sudo apt install neovim
-sudo apt install vim
+  sudo pacman -S git
+  sudo pacman -S npm
+  sudo pacman -S neovim 
+  sudo pacman -S python-pip
+  sudo pacman -S rust
+}
 
-sudo npm install monogdb
+mac_install() {
+  echo "Just Install Linux"
+}
 
+win32_install(){
+  echo "Linux is best, you are sub-human"
+}
